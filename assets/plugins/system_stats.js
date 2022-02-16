@@ -30,15 +30,15 @@ const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
 var SYSDTXT = ''
-if (Build.LANG == 'SI') SYSDTXT = '💻 පද්ධති තත්ත්වය'
-if (Build.LANG == 'EN') SYSDTXT = '💻 System status'
+if (Build.LANG == 'SI') SYSDTXT = '💻 TEA BOT ගේ පද්ධති තත්ත්වය'
+if (Build.LANG == 'EN') SYSDTXT = '💻 TEA BOTs System status'
 
 var VER = ''
-if (Build.LANG == 'SI') VER = '🧬 Version'
-if (Build.LANG == 'EN') VER = '🧬 Version'
+if (Build.LANG == 'SI') VER = '🧬 TEA BOT Version'
+if (Build.LANG == 'EN') VER = '🧬 TEA BOT Version'
 
 var MSG = ''
-if (Build.ALIVEMSG == 'default') MSG = '```Hey There! Bot Online now. 💃🏻♥️```\n\n*Developer:* ```Black Amda```\n\n*Official Website:* https://amdaniwasa.com\n\n*Youtube channel :* https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ\n\n```Thank You For Using Queen Amdi💞```'
+if (Build.ALIVEMSG == 'default') MSG = '```Hey There! TEA BOT Online now. 💃🏻♥️```\n\n*Developer:* ```TECHVISON LK```\n\n*Youtube channel :* https://www.youtube.com/c/TECHVISIONLK\n\n```Thank You For Using TEA BOT💞```'
 else MSG = Build.ALIVEMSG
 
 
@@ -62,7 +62,7 @@ Amdi.operate({pattern: 'alive', fromMe: Work_Mode, desc: Lang.ALIVE_DESC,  delet
     ]
     const buttonMessage = {
         contentText: MSG,
-        footerText: 'ǫᴜᴇᴇɴ ᴀᴍᴅɪ © ᴘᴜʙʟɪᴄ ᴇᴅɪᴛɪᴏɴ',
+        footerText: 'ᴛᴇᴀ ʙᴏᴛ ᴘᴜʙʟɪᴄ ᴇᴅɪᴛɪᴏɴ ʙʏ ᴛᴇᴄʜᴠɪꜱɪᴏɴ ʟᴋ',
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage    
@@ -81,10 +81,10 @@ Amdi.operate({pattern: 'qasysstats', fromMe: Work_Mode, desc: Lang.SYSD_DESC, do
 Amdi.operate({pattern: 'qaversion', fromMe: Work_Mode, desc: Lang.BOT_V, dontAddCommandList: true,  deleteCommand: false}, (async (message, match) => {
     await QueenAmdi.amdi_setup()
     await message.client.sendMessage(message.jid, 
-        `*🧬 Queen Amdi Version 🧬*\n\n` + 
+        `*🧬 TEA BOT Version 🧬*\n\n` + 
         '```Installed version :```\n' +
         Lang.version + 
-        `\n\nCheck official website : https://amdaniwasa.com/`
+        `\n\nCheck YouTube : https://www.youtube.com/c/TECHVISIONLK`
    , MessageType.text, {quoted: message.data});
     
 }));
