@@ -1,25 +1,25 @@
 {
-    "name": "queen_amdi",
+    "name": "TEA-BOT",
     "version": "3.6.2v",
-    "description": "Queen Amdi Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-    "main": "./QueenAmdi/assets/module.js",
+    "description": "TEA BOT project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+    "main": "./TEA-BOT/assets/module.js",
     "scripts": {
       "start": "supervisor -s assets/module.js"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/BlackAmda/QueenAmdi.git"
+      "url": "git+https://github.com/TECHVISIONLK/TEA-BOT.git"
     },
     "keywords": [
       "whatsapp"
     ],
-    "author": "Black Amda",
-    "developer": "AN Tech",
+    "author": "TECHVISIONLK",
+    "developer": "TECHVISION LK",
     "license": "GPL-3.0-or-later",
     "bugs": {
-      "url": "https://github.com/BlackAmda/QueenAmdi/issues"
+      "url": "https://github.com/TECHVISIONLK/TEA-BOT/issues"
     },
-    "homepage": "https://github.com/BlackAmda/QueenAmdi#readme",
+    "homepage": "https://github.com/TECHVISIONLK/TEA-BOT#readme",
     "dependencies": {
       "@blackamda/queenamdi-web-api": "^1.0.2",
       "queenamdi-public": "^1.1.0",
