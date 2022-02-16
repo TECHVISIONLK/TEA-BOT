@@ -23,7 +23,7 @@ const _amdi = QueenAmdi.panel
 const {MessageType} = require('@blackamda/queenamdi-web-api');
 let Work_Mode = Build.WORKTYPE == 'public' ? false : true
 const fs = require("fs")
-const amdi = fs.readFileSync('./node_modules/queenamdi-public/media/amdibot.mp3')  
+const amdi = fs.readFileSync('./Database/TEABOT.mp3')  
 
 const Language = require('../language');
 const Lang = Language.getString('_amdi');
