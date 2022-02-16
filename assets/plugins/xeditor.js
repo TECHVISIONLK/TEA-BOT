@@ -26,10 +26,10 @@ const ffmpeg = require('fluent-ffmpeg');
 let LOL = Build.WORKTYPE == 'public' ? false : true
 
 var EDITOR_DESC = ''
-if (Build.LANG == 'SI') EDITOR_DESC = 'එය මාධ්‍ය editing මෙවලම් 25 කට වඩා ඇති ප්ලගිනයකි.'
-if (Build.LANG == 'EN') EDITOR_DESC = 'A plugin that have 25 media editing tools.'
+if (Build.LANG == 'SI') EDITOR_DESC = 'TEA BOT හි Video edit කිරීමට සැකසූ පලගීනයකි.'
+if (Build.LANG == 'EN') EDITOR_DESC = 'A plugin that have 25 media editing tools in TEA BOT.'
 
-const eng = `💠🔮 *Media Editors* 🔮💠\n\n` +
+const eng = `💠🔮 *TEA BOT Media Editors* 🔮💠\n\n` +
 `🔮 Command : *.mp4enhance*\n` +
 `📄 Description : Enhance video’s quality.\n\n` +
 `🔮 Command : *.interp*\n` +
@@ -112,9 +112,13 @@ const eng = `💠🔮 *Media Editors* 🔮💠\n\n` +
 `📄 Description : It makes the colors of the photo more vivid and attractive.\n\n` +
 `🔮 Command : *.artimage*\n` +
 `📄 Description : Applies a art effect to the photo.\n\n` +
-`Check official website : https://amdaniwasa.com/`
+`Check YouTube : https://www.youtube.com/c/TECHVISIONLK`
+`TECHVISION LK YouTube Downloader - https://colab.research.google.com/drive/1Ae54K1Wt53-EJxJB-6kyDelQ1TwO2gGw?usp=sharing`
+`*Download YouTube videos upto 8K quality*`
+`TECHVISION LK Torrent Downloader - https://colab.research.google.com/drive/1fKVjUlzSeuvbB0-aUaB9A3uysiU7JdHT?usp=sharing`
+`*Download torrent for free*`
 
-const sin = `💠🔮 *මාධ්‍ය සංස්කාරක* 🔮💠\n\n` +
+const sin = `💠🔮 *TEA BOT මාධ්‍ය සංස්කාරක* 🔮💠\n\n` +
 `🔮 විධානය : *.mp4enhance*\n` +
 `💠🔮 * මාධ්ය සංස්කාරක* 🔮💠\n\n` +
 `🔮 විධානය : *.mp4enhance*\n` +
@@ -199,8 +203,11 @@ const sin = `💠🔮 *මාධ්‍ය සංස්කාරක* 🔮💠\n\n
 `📄 විස්තර : එමඟින් ඡායාරූපයේ වර්ණ වඩාත් විචිත්ර හා ආකර්ෂණීය කරයි.\n\n` +
 `🔮 විධානය : *.artimage*\n` +
 `📄 විස්තර : ඡායාරූපය සඳහා art effect යොදයි.\n\n` +
-`Check official website : https://amdaniwasa.com/`
-
+`Check YouTube : https://www.youtube.com/c/TECHVISIONLK`
+`TECHVISION LK YouTube Downloader - https://colab.research.google.com/drive/1Ae54K1Wt53-EJxJB-6kyDelQ1TwO2gGw?usp=sharing`
+`*Download YouTube videos upto 8K quality*`
+`TECHVISION LK Torrent Downloader - https://colab.research.google.com/drive/1fKVjUlzSeuvbB0-aUaB9A3uysiU7JdHT?usp=sharing`
+`*Download torrent for free*`
 
 if (Build.LANG == 'EN' || Build.LANG == 'ES') {
     if (Build.WORKTYPE == 'private') {
@@ -1116,7 +1123,7 @@ if (Build.LANG == 'SI') {
             .format('mp4')
             .save('slowmo.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion by Queen Amdi'});
+                await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion by TEA BOT'});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: LOL})
     }));
