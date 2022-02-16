@@ -32,8 +32,8 @@ if (Build.LANG == 'SI') NEED_WORD = '*ඔබ වචන ඇතුළත් කළ
 if (Build.LANG == 'EN') NEED_WORD = '*Please enter words!*'
 
 var TTP_DESC = ''
-if (Build.LANG == 'SI') TTP_DESC = 'විවිධ TTP ස්ටිකර් සාදන්න.'
-if (Build.LANG == 'EN') TTP_DESC = 'Make custom TTP stickers.'
+if (Build.LANG == 'SI') TTP_DESC = 'TEA BOT මගින් ස්ටිකර් සාදන්න.'
+if (Build.LANG == 'EN') TTP_DESC = 'Make custom stickers via TEA BOT.'
 
 Amdi.operate({pattern: 'ttp ?(.*)', fromMe: Work_Mode, desc: TTP_DESC, dontAddCommandList: false, deleteCommand: true}, (async (amdiMSG, match) => {
   await QueenAmdi.amdi_setup()
