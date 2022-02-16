@@ -162,7 +162,7 @@ Amdi.operate({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PI
 
   await msg.delete();
   await message.client.sendMessage(
-    message.jid,'*Pong!*\n```' + (end - start) + 'ms```', MessageType.text);
+    message.jid,'*TEA BOT Speed Test* _Your Ping is,_\n```' + (end - start) + 'ms```', MessageType.text);
 }));
 
 
